@@ -1,0 +1,59 @@
+.hourly-forecast {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.hourly-forecast__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+}
+
+.hourly-forecast__scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hourly-forecast__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hourly-forecast__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 100px;
+  padding: 12px 8px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.hourly-forecast__time {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.hourly-forecast__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.hourly-forecast__temp {
+  color: #f1f5f9;
+  font-size: 1rem;
+  font-weight: 600;
+}

@@ -1,0 +1,129 @@
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 32px;
+  gap: 24px;
+}
+
+.current-weather__main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.current-weather__temp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.current-weather__temperature {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.current-weather__high-low {
+  display: flex;
+  gap: 16px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.current-weather__city-info {
+  margin-top: 8px;
+}
+
+.current-weather__city-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.current-weather__time {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.current-weather__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.current-weather__condition {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.current-weather__icon {
+  width: 64px;
+  height: 64px;
+}
+
+.current-weather__description {
+  color: #cbd5e1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.current-weather__detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+}
+
+.current-weather__detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.current-weather__detail-label {
+  color: #64748b;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.current-weather__detail-value {
+  color: #f1f5f9;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .current-weather {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+
+  .current-weather__temperature {
+    font-size: 3.5rem;
+  }
+
+  .current-weather__details {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .current-weather__detail-grid {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.current-weather__city-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

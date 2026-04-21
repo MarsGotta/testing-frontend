@@ -1,0 +1,42 @@
+# Dependencias
+node_modules/
+
+# Builds
+dist/
+build/
+
+# Cobertura y reportes
+coverage/
+reports/
+.stryker-tmp/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caché de herramientas
+.vite/
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+
+# Entorno
+.env
+.env.local
+.env.*.local
+
+# Editores / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+.claude

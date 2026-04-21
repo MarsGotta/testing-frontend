@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "_comment": "Stryker con Vitest runner. Rapido, perTest soportado. Referencia canonica del S12 de la guia interactiva.",
+  "testRunner": "vitest",
+  "plugins": ["@stryker-mutator/vitest-runner"],
+  "coverageAnalysis": "perTest",
+  "mutate": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "!src/**/*.test.*",
+    "!src/**/*.old.test.*",
+    "!src/test-utils/**",
+    "!src/main.jsx",
+    "!src/App.jsx"
+  ],
+  "reporters": ["html", "clear-text", "progress"],
+  "htmlReporter": {
+    "fileName": "reports/mutation/vitest/mutation.html"
+  },
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": 0
+  },
+  "incremental": true,
+  "incrementalFile": "reports/stryker-incremental.vitest.json",
+  "concurrency": 4,
+  "timeoutMS": 10000,
+  "timeoutFactor": 1.5
+}

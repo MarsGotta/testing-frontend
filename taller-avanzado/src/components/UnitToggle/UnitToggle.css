@@ -1,0 +1,31 @@
+.unit-toggle {
+  display: flex;
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+.unit-toggle__button {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.unit-toggle__button:hover {
+  color: #f1f5f9;
+}
+
+.unit-toggle__button--active {
+  background-color: #4e80ee;
+  color: #ffffff;
+}
+
+.unit-toggle__button--active:hover {
+  color: #ffffff;
+}

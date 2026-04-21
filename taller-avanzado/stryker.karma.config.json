@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "_comment": "Stryker con Karma runner. Lanza ChromeHeadless por mutante. NO soporta coverageAnalysis: perTest. El campo `mutate` debe alinearse con lo que karma.stryker.conf.cjs carga como tests.",
+  "testRunner": "karma",
+  "plugins": ["@stryker-mutator/karma-runner"],
+  "karma": {
+    "configFile": "karma.stryker.conf.cjs",
+    "projectType": "custom",
+    "config": {
+      "browsers": ["ChromeHeadless"],
+      "singleRun": false,
+      "autoWatch": false
+    }
+  },
+  "coverageAnalysis": "off",
+  "mutate": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "!src/**/*.test.*",
+    "!src/**/*.old.test.*",
+    "!src/test-utils/**",
+    "!src/main.jsx",
+    "!src/App.jsx"
+  ],
+  "reporters": ["html", "clear-text", "progress"],
+  "htmlReporter": {
+    "fileName": "reports/mutation/karma/mutation.html"
+  },
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": 0
+  },
+  "incremental": true,
+  "incrementalFile": "reports/stryker-incremental.karma.json",
+  "concurrency": 2,
+  "timeoutMS": 30000,
+  "timeoutFactor": 2
+}
