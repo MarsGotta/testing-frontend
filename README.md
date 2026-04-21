@@ -45,12 +45,6 @@ Elige la ruta según tu situación:
 2. Cada archivo de la guía enlaza al código ejecutable de
    `taller-basico` o `taller-avanzado` cuando existe un ejemplo.
 
-### 4. Soy formador/a y voy a impartir la sesión
-1. Lee [`material/material/guion-sesion-sincrona.md`](./material/material/guion-sesion-sincrona.md)
-   (guion minuto a minuto del Taller 2).
-2. El PDF maquetado para imprimir está en
-   [`material/Taller-Testing-Frontend-Guia-Completa.pdf`](./material/Taller-Testing-Frontend-Guia-Completa.pdf).
-
 ---
 
 ## Los tres bloques en detalle
